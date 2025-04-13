@@ -1,0 +1,78 @@
+{
+  "rover": {
+    "id": 5,
+    "name": "Curiosity",
+    "landing_date": "2012-08-06",
+    "launch_date": "2011-11-26",
+    "status": "active",
+    "max_sol": 4507,
+    "max_date": "2025-04-10",
+    "total_photos": 700340,
+    "cameras": [
+      {
+        "name": "FHAZ",
+        "full_name": "Front Hazard Avoidance Camera"
+      },
+      {
+        "name": "NAVCAM",
+        "full_name": "Navigation Camera"
+      },
+      {
+        "name": "MAST",
+        "full_name": "Mast Camera"
+      },
+      {
+        "name": "CHEMCAM",
+        "full_name": "Chemistry and Camera Complex"
+      },
+      {
+        "name": "MAHLI",
+        "full_name": "Mars Hand Lens Imager"
+      },
+      {
+        "name": "MARDI",
+        "full_name": "Mars Descent Imager"
+      },
+      {
+        "name": "RHAZ",
+        "full_name": "Rear Hazard Avoidance Camera"
+      },
+      {
+        "name": "MAST_LEFT",
+        "full_name": "MAST_LEFT"
+      },
+      {
+        "name": "CHEMCAM_RMI",
+        "full_name": "CHEMCAM_RMI"
+      },
+      {
+        "name": "NAV_RIGHT_B",
+        "full_name": "NAV_RIGHT_B"
+      },
+      {
+        "name": "FHAZ_LEFT_B",
+        "full_name": "FHAZ_LEFT_B"
+      },
+      {
+        "name": "FHAZ_RIGHT_B",
+        "full_name": "FHAZ_RIGHT_B"
+      },
+      {
+        "name": "NAV_LEFT_B",
+        "full_name": "NAV_LEFT_B"
+      },
+      {
+        "name": "RHAZ_LEFT_B",
+        "full_name": "RHAZ_LEFT_B"
+      },
+      {
+        "name": "RHAZ_RIGHT_B",
+        "full_name": "RHAZ_RIGHT_B"
+      },
+      {
+        "name": "MAST_RIGHT",
+        "full_name": "MAST_RIGHT"
+      }
+    ]
+  }
+}

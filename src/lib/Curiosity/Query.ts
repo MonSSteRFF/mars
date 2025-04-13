@@ -15,9 +15,13 @@ export const Cameras = {
 export const QueryByDate = async (q: {date: Date; camera?: keyof typeof Cameras; page?: number}) => {
   const {date: d, camera = 'FHAZ', page = 0} = q;
 
-  const req = await fetch(
-    `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${d.getFullYear()}-${d.getMonth()}-${d.getDate()}&api_key=${apiKey}&camera=${camera.toLowerCase()}&page=${page}`,
-  );
+  try {
+    const req = await fetch(
+      `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=${d.getFullYear()}-${d.getMonth()}-${d.getDate()}&api_key=${apiKey}&camera=${camera.toLowerCase()}&page=${page}`,
+    );
 
-  return ((await req.json()) as {photos: Photo[]}).photos;
+    return ((await req.json()) as {photos: Photo[]}).photos;
+  } catch (e) {
+    return [];
+  }
 };

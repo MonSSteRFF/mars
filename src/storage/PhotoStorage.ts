@@ -1,4 +1,4 @@
-import {makeAutoObservable} from 'mobx';
+import {action, makeAutoObservable, observable, runInAction} from 'mobx';
 
 import {Cameras, QueryByDate} from '../lib/Curiosity/Query.ts';
 import {Photo} from '../lib/Curiosity/Query.types.ts';
@@ -9,7 +9,13 @@ class PhotoStorage {
   lastRequestData: {camera: keyof typeof Cameras; date: Date} | null = null;
 
   constructor() {
-    makeAutoObservable(this);
+    makeAutoObservable(this, {
+      photos: observable,
+      page: observable,
+      lastRequestData: observable,
+      openGallery: action,
+      nextPage: action,
+    });
   }
 
   async openGallery(q: {date: Date; camera: keyof typeof Cameras}) {

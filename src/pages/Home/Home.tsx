@@ -12,7 +12,7 @@ import PickerSelect from './PickerSelect.tsx';
 
 const Home = () => {
   const [camera, setCamera] = useState<keyof typeof Cameras>((Object.keys(Cameras) as Array<keyof typeof Cameras>)[0]);
-  const [date, setDate] = useState<Date>(new Date('2021-11-18'));
+  const [date, setDate] = useState<Date>(new Date('2014-07-18'));
 
   const {photoStorage} = useStorage(storage => ({photoStorage: storage.photoStorage}));
 

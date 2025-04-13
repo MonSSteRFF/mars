@@ -20,7 +20,7 @@ const DatePicker: React.FC<DatePickerProps> = ({date, onChange}) => {
 
       <TouchableOpacity style={styles.select} onPress={() => setDatePickerOpen(true)}>
         <Text style={styles.select_text}>
-          Select date: {date.getFullYear()}.{date.getMonth()}.{date.getDate()}
+          Select date: {date.getFullYear()}.{date.getMonth() + 1}.{date.getDate()}
         </Text>
 
         <Calendar style={styles.select_icon} />

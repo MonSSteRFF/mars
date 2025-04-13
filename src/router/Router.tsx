@@ -4,7 +4,7 @@ import React from 'react';
 
 import Gallery from '../pages/Gallery/Gallery.tsx';
 import Home from '../pages/Home/Home.tsx';
-import Photo from '../pages/photo/Photo.tsx';
+import Photo from '../pages/Photo/Photo.tsx';
 import Splash from '../pages/Splash/Splash.tsx';
 import styles from './Router.styles.ts';
 import {Screens} from './Router.types.ts';

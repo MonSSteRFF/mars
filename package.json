@@ -8,8 +8,7 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "android:release": "npm run android -- --mode=\"release\"",
-    "android:build": "npx react-native build-android --mode=release"
+    "android:release": "npm run android -- --mode=\"release\""
   },
   "dependencies": {
     "@react-native-picker/picker": "^2.11.0",
